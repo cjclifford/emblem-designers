@@ -4,5 +4,10 @@
 }
 .image__team {
   max-width: 150px;
+  max-height: 150px;
   width: 80%;
+  margin-top: 25px;
+}
+.image__team img {
+  width: 100%;
 }

@@ -35,16 +35,17 @@ function onSetToggleAll() {
 }
 
 function showTeam(teamId) {
-  console.log(this.teams);
-  if (teamId === null) {
-    this.allShowing = true;
-    for (team of this.teams)
-      team.style.display = "initial";
+  lazyLoadButton = document.getElementById('lazy-load-button');
+  if (teamId === null || teamId === undefined) {
+    lazyLoadButton.style.display = "initial";
+    showAllTeams();
     return;
-  } else this.allShowing = false;
-  for (team of this.teams)
-    team.style.display = "none";
-  this.teams[teamId].style.display = "initial";
+  } else {
+    lazyLoadButton.style.display = "none";
+    for (team of this.teams)
+      team.style.display = "none";
+    this.teams[teamId].style.display = "initial";
+  }
 }
 
 function initLazyLoad() {
@@ -56,12 +57,20 @@ function initLazyLoad() {
   checkLazyLoadLimit();
 }
 
+function showAllTeams() {
+  for (team in this.teams) {
+    console.log(team);
+    if (team <= this.lazyLoadIndex)
+      this.teams[team].style.display = "initial";
+    else
+      this.teams[team].style.display = "none";
+  }
+  loadMoreVeryLazily();
+}
+
 function loadMoreVeryLazily() {
-  console.log('loading more...');
-  console.log('length: ', this.teams.length, 'index: ', this.lazyLoadIndex);
   if (this.teams.length - 1 > this.lazyLoadIndex) {
     this.lazyLoadIndex++;
-    console.log(this.teams[this.lazyLoadIndex]);
     this.teams[this.lazyLoadIndex].style.display = "initial";
     checkLazyLoadLimit();
   }
