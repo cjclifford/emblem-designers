@@ -1,0 +1,74 @@
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                        supported by Chrome and Opera */
+}
+.component {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.component {
+  display: flex;
+  flex-direction: row;
+}
+.component__flex {
+  display: flex;
+  flex: 50%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  justify-content: center;
+}
+.component__team {
+  display: block;
+}
+.component__images {
+  display: flex;
+  justify-content: center;
+}
+.component__images__design {
+  padding: 15px;
+  min-width: 200px;
+}
+.component__images__team {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 15px;
+  min-width: 200px;
+}
+.component__description {
+  padding: 10px;
+}
+.component__description__text {
+  font-size: 1.5rem;
+  max-height: 30ex;
+  overflow: hidden;
+}
+.component__rationale__text {
+  padding-left: 15px;
+  min-width: 320px;
+  max-width: 500px;
+}
+.component__description__heading {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.component__description__body {
+  font-size: 1rem;
+}
+.component__description__toggle {
+  font-weight: bold;
+  cursor: pointer;
+}
+@media only screen and (max-width: 745px) {
+  .component__images {
+    flex-direction: column;
+  }
+}

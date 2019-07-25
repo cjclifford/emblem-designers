@@ -1,0 +1,465 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>20 SA Emblem Designers</title>
+  <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <!-- Custom Theme files -->
+  <link href="css/style.css" rel='stylesheet' type='text/css' />
+  <!-- Custom Theme files -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script
+    type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+  <link href="css/nav.css" rel="stylesheet" type="text/css" media="all" />
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800,900' rel='stylesheet'
+    type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300:700' rel='stylesheet' type='text/css'>
+  <link href="css/component.css" rel="stylesheet" type="text/css" />
+  <link href="css/image.css" rel="stylesheet" type="text/css" />
+  <link href="css/lazy-load.css" rel="stylesheet" type="text/css" />
+  <script src="js/designers.js" type="text/javascript"></script>
+  <script src="js/jquery.min.js" type="text/javascript"></script>
+  <script>
+    $(function () {
+      var button = $('#loginButton');
+      var box = $('#loginBox');
+      var form = $('#loginForm');
+      button.removeAttr('href');
+      button.mouseup(function (login) {
+        box.toggle();
+        button.toggleClass('active');
+      });
+      form.mouseup(function () {
+        return false;
+      });
+      $(this).mouseup(function (login) {
+        if (!($(login.target).parent('#loginButton').length > 0)) {
+          button.removeClass('active');
+          box.hide();
+        }
+      });
+    });
+  </script>
+  <!----font-Awesome----->
+  <link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+  <!----font-Awesome----->
+</head>
+
+<body>
+  <!-- Header -->
+  <div class="header">
+    <div class="header_bottom">
+      <div class="container">
+        <div class="logo">
+          <h1><a href="index.html"><img src="images/logo.svg" /></a></h1>
+        </div>
+        <div class="navigation">
+          <div>
+            <label class="mobile_menu" for="mobile_menu">
+              <span>Menu</span>
+            </label>
+            <input id="mobile_menu" type="checkbox">
+            <ul class="nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="terms.html">20 Emblem Designers</a></li>
+              <li><a href="contact.html">Contact us</a></li>
+              <div class="clearfix"></div>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <div class="reservation_banner">
+      <div class="main_title">20 Emblem Designers</div>
+      <div class="divider"></div>
+    </div>
+  </div>
+  <!-- Ends Header -->
+  <!------------ Start Content ---------------->
+  <div class="main">
+    <div class="reservation_top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="post1">
+
+              <h3>The venue, one of the 7 wonders of the world, Cape Town </h3>
+              <p>The 20 Designers got devided into 4 teams. Each team was given a name. The names of the teams
+                were:</a></span>
+
+              </p>
+
+
+              <div id="portfolio">
+                <div class="container">
+
+                  <div class="categories">
+                    <ul class="cat">
+                      <li>
+                        <ol class="type noselect">
+                          <li><a class="active" onclick="showTeam()">All</a></li>
+                          <li><a onclick="showTeam(0)">Team Africa</a></li>
+                          <li><a onclick="showTeam(1)">Team Unity</a></li>
+                          <li><a onclick="showTeam(2)">Team 3</a></li>
+                          <li><a onclick="showTeam(3)">Team 4</a></li>
+                          <li><a onclick="showTeam(4)">Team 5</a></li>
+                        </ol>
+                      </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+
+                  <div class="component__team">
+                    <div class="component__description">
+                      <div id="description" class="component__description__text">
+                        <span class="component__description__heading">Team Africa</span>
+                        <p class="component__description__body">Sed sed tristique tellus. Pellentesque semper magna
+                          dictum enim congue, vel fermentum eros dictum. Sed quis leo justo. Proin rhoncus varius
+                          tempus. Aliquam et fermentum est. Praesent diam justo, aliquet id ligula et, dignissim
+                          dictum quam. Mauris posuere lorem in arcu auctor, sit amet dignissim mauris dignissim. Nam
+                          tempor nulla lorem, nec pellentesque enim elementum eget. Maecenas placerat consequat erat
+                          sed congue. Nulla vitae posuere arcu. Nulla et lorem feugiat arcu auctor vehicula nec et
+                          metus.
+                        </p>
+                      </div> <!-- text -->
+                      <div class="component__description__toggle noselect" onclick="onToggleDescriptionSize(event)">
+                        <span id="descriptionToggle">Read more</span>
+                      </div>
+                    </div>
+                    <div class="component__images__team noselect">
+                      <img class="image__team" src="images/placeholder.svg" />
+                      <img class="image__team" src="images/placeholder.svg" />
+                      <img class="image__team" src="images/placeholder.svg" />
+                      <img class="image__team" src="images/placeholder.svg" />
+                      <img class="image__team" src="images/placeholder.svg" />
+                    </div> <!-- team images -->
+                    <div class="component__flex noselect">
+                      <div class="portfolio-item">
+                        <div class="hover-bg"> <a href="images/mornay_large.jpg" title="Team unity"
+                            data-lightbox-gallery="gallery1">
+                            <div class="hover-text">
+                              <h4>Team Africa</h4>
+                            </div>
+                            <div class="component__images__design">
+                              <img class="image__design" src="images/mornay_large.jpg" />
+                            </div> <!-- design image -->
+                          </a> </div>
+                      </div>
+                      <div class="component__rationale__text">
+                        <div id="description" class="component__description__text">
+                          <span class="component__description__heading">Rationale</span>
+                          <p class="component__description__body">Sed sed tristique tellus. Pellentesque semper magna
+                            dictum enim congue, vel fermentum eros dictum. Sed quis leo justo. Proin rhoncus varius
+                            tempus. Aliquam et fermentum est. Praesent diam justo, aliquet id ligula et, dignissim
+                            dictum quam. Mauris posuere lorem in arcu auctor, sit amet dignissim mauris dignissim. Nam
+                            tempor nulla lorem, nec pellentesque enim elementum eget. Maecenas placerat consequat erat
+                            sed congue. Nulla vitae posuere arcu. Nulla et lorem feugiat arcu auctor vehicula nec et
+                            metus.
+                          </p>
+                        </div> <!-- text -->
+                        <div class="component__description__toggle noselect" onclick="onToggleDescriptionSize(event)">
+                          <span id="descriptionToggle">Read more</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="component__team">
+                    <div class="component__description">
+                      <div id="description" class="component__description__text">
+                        <span class="component__description__heading">Team Unity</span>
+                        <p class="component__description__body">Sed sed tristique tellus. Pellentesque semper magna
+                          dictum enim congue, vel fermentum eros dictum. Sed quis leo justo. Proin rhoncus varius
+                          tempus. Aliquam et fermentum est. Praesent diam justo, aliquet id ligula et, dignissim
+                          dictum quam. Mauris posuere lorem in arcu auctor, sit amet dignissim mauris dignissim. Nam
+                          tempor nulla lorem, nec pellentesque enim elementum eget. Maecenas placerat consequat erat
+                          sed congue. Nulla vitae posuere arcu. Nulla et lorem feugiat arcu auctor vehicula nec et
+                          metus.
+                        </p>
+                      </div> <!-- text -->
+                      <div class="component__description__toggle noselect" onclick="onToggleDescriptionSize(event)">
+                        <span id="descriptionToggle">Read more</span>
+                      </div>
+                    </div>
+                    <div class="component__images__team noselect">
+                      <img class="image__team" src="images/placeholder.svg" />
+                      <img class="image__team" src="images/placeholder.svg" />
+                      <img class="image__team" src="images/placeholder.svg" />
+                      <img class="image__team" src="images/placeholder.svg" />
+                      <img class="image__team" src="images/placeholder.svg" />
+                    </div> <!-- team images -->
+                    <div class="component__flex noselect">
+                      <div class="portfolio-item">
+                        <div class="hover-bg"> <a href="images/mornay_large.jpg" title="Team unity"
+                            data-lightbox-gallery="gallery1">
+                            <div class="hover-text">
+                              <h4>Team Unity</h4>
+                            </div>
+                            <div class="component__images__design">
+                              <img class="image__design" src="images/mornay_large.jpg" />
+                            </div> <!-- design image -->
+                          </a> </div>
+                      </div>
+                      <div class="component__rationale__text">
+                        <div id="description" class="component__description__text">
+                          <span class="component__description__heading">Rationale</span>
+                          <p class="component__description__body">Sed sed tristique tellus. Pellentesque semper magna
+                            dictum enim congue, vel fermentum eros dictum. Sed quis leo justo. Proin rhoncus varius
+                            tempus. Aliquam et fermentum est. Praesent diam justo, aliquet id ligula et, dignissim
+                            dictum quam. Mauris posuere lorem in arcu auctor, sit amet dignissim mauris dignissim. Nam
+                            tempor nulla lorem, nec pellentesque enim elementum eget. Maecenas placerat consequat erat
+                            sed congue. Nulla vitae posuere arcu. Nulla et lorem feugiat arcu auctor vehicula nec et
+                            metus.
+                          </p>
+                        </div> <!-- text -->
+                        <div class="component__description__toggle noselect" onclick="onToggleDescriptionSize(event)">
+                          <span id="descriptionToggle">Read more</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="component__team">
+                    <div class="component__description">
+                      <div id="description" class="component__description__text">
+                        <span class="component__description__heading">Team 3</span>
+                        <p class="component__description__body">Sed sed tristique tellus. Pellentesque semper magna
+                          dictum enim congue, vel fermentum eros dictum. Sed quis leo justo. Proin rhoncus varius
+                          tempus. Aliquam et fermentum est. Praesent diam justo, aliquet id ligula et, dignissim
+                          dictum quam. Mauris posuere lorem in arcu auctor, sit amet dignissim mauris dignissim. Nam
+                          tempor nulla lorem, nec pellentesque enim elementum eget. Maecenas placerat consequat erat
+                          sed congue. Nulla vitae posuere arcu. Nulla et lorem feugiat arcu auctor vehicula nec et
+                          metus.
+                        </p>
+                      </div> <!-- text -->
+                      <div class="component__description__toggle noselect" onclick="onToggleDescriptionSize(event)">
+                        <span id="descriptionToggle">Read more</span>
+                      </div>
+                    </div>
+                    <div class="component__images__team noselect">
+                      <img class="image__team" src="images/placeholder.svg" />
+                      <img class="image__team" src="images/placeholder.svg" />
+                      <img class="image__team" src="images/placeholder.svg" />
+                      <img class="image__team" src="images/placeholder.svg" />
+                      <img class="image__team" src="images/placeholder.svg" />
+                    </div> <!-- team images -->
+                    <div class="component__flex noselect">
+                      <div class="portfolio-item">
+                        <div class="hover-bg"> <a href="images/mornay_large.jpg" title="Team unity"
+                            data-lightbox-gallery="gallery1">
+                            <div class="hover-text">
+                              <h4>Team 3</h4>
+                            </div>
+                            <div class="component__images__design">
+                              <img class="image__design" src="images/mornay_large.jpg" />
+                            </div> <!-- design image -->
+                          </a> </div>
+                      </div>
+                      <div class="component__rationale__text">
+                        <div id="description" class="component__description__text">
+                          <span class="component__description__heading">Rationale</span>
+                          <p class="component__description__body">Sed sed tristique tellus. Pellentesque semper magna
+                            dictum enim congue, vel fermentum eros dictum. Sed quis leo justo. Proin rhoncus varius
+                            tempus. Aliquam et fermentum est. Praesent diam justo, aliquet id ligula et, dignissim
+                            dictum quam. Mauris posuere lorem in arcu auctor, sit amet dignissim mauris dignissim. Nam
+                            tempor nulla lorem, nec pellentesque enim elementum eget. Maecenas placerat consequat erat
+                            sed congue. Nulla vitae posuere arcu. Nulla et lorem feugiat arcu auctor vehicula nec et
+                            metus.
+                          </p>
+                        </div> <!-- text -->
+                        <div class="component__description__toggle noselect" onclick="onToggleDescriptionSize(event)">
+                          <span id="descriptionToggle">Read more</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="component__team">
+                    <div class="component__description">
+                      <div id="description" class="component__description__text">
+                        <span class="component__description__heading">Team 4</span>
+                        <p class="component__description__body">Sed sed tristique tellus. Pellentesque semper magna
+                          dictum enim congue, vel fermentum eros dictum. Sed quis leo justo. Proin rhoncus varius
+                          tempus. Aliquam et fermentum est. Praesent diam justo, aliquet id ligula et, dignissim
+                          dictum quam. Mauris posuere lorem in arcu auctor, sit amet dignissim mauris dignissim. Nam
+                          tempor nulla lorem, nec pellentesque enim elementum eget. Maecenas placerat consequat erat
+                          sed congue. Nulla vitae posuere arcu. Nulla et lorem feugiat arcu auctor vehicula nec et
+                          metus.
+                        </p>
+                      </div> <!-- text -->
+                      <div class="component__description__toggle noselect" onclick="onToggleDescriptionSize(event)">
+                        <span id="descriptionToggle">Read more</span>
+                      </div>
+                    </div>
+                    <div class="component__images__team noselect">
+                      <img class="image__team" src="images/placeholder.svg" />
+                      <img class="image__team" src="images/placeholder.svg" />
+                      <img class="image__team" src="images/placeholder.svg" />
+                      <img class="image__team" src="images/placeholder.svg" />
+                      <img class="image__team" src="images/placeholder.svg" />
+                    </div> <!-- team images -->
+                    <div class="component__flex noselect">
+                      <div class="portfolio-item">
+                        <div class="hover-bg"> <a href="images/mornay_large.jpg" title="Team unity"
+                            data-lightbox-gallery="gallery1">
+                            <div class="hover-text">
+                              <h4>Team 4</h4>
+                            </div>
+                            <div class="component__images__design">
+                              <img class="image__design" src="images/mornay_large.jpg" />
+                            </div> <!-- design image -->
+                          </a> </div>
+                      </div>
+                      <div class="component__rationale__text">
+                        <div id="description" class="component__description__text">
+                          <span class="component__description__heading">Rationale</span>
+                          <p class="component__description__body">Sed sed tristique tellus. Pellentesque semper magna
+                            dictum enim congue, vel fermentum eros dictum. Sed quis leo justo. Proin rhoncus varius
+                            tempus. Aliquam et fermentum est. Praesent diam justo, aliquet id ligula et, dignissim
+                            dictum quam. Mauris posuere lorem in arcu auctor, sit amet dignissim mauris dignissim. Nam
+                            tempor nulla lorem, nec pellentesque enim elementum eget. Maecenas placerat consequat erat
+                            sed congue. Nulla vitae posuere arcu. Nulla et lorem feugiat arcu auctor vehicula nec et
+                            metus.
+                          </p>
+                        </div> <!-- text -->
+                        <div class="component__description__toggle noselect" onclick="onToggleDescriptionSize(event)">
+                          <span id="descriptionToggle">Read more</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="component__team">
+                    <div class="component__description">
+                      <div id="description" class="component__description__text">
+                        <span class="component__description__heading">Team 5</span>
+                        <p class="component__description__body">Sed sed tristique tellus. Pellentesque semper magna
+                          dictum enim congue, vel fermentum eros dictum. Sed quis leo justo. Proin rhoncus varius
+                          tempus. Aliquam et fermentum est. Praesent diam justo, aliquet id ligula et, dignissim
+                          dictum quam. Mauris posuere lorem in arcu auctor, sit amet dignissim mauris dignissim. Nam
+                          tempor nulla lorem, nec pellentesque enim elementum eget. Maecenas placerat consequat erat
+                          sed congue. Nulla vitae posuere arcu. Nulla et lorem feugiat arcu auctor vehicula nec et
+                          metus.
+                        </p>
+                      </div> <!-- text -->
+                      <div class="component__description__toggle noselect" onclick="onToggleDescriptionSize(event)">
+                        <span id="descriptionToggle">Read more</span>
+                      </div>
+                    </div>
+                    <div class="component__images__team noselect">
+                      <img class="image__team" src="images/placeholder.svg" />
+                      <img class="image__team" src="images/placeholder.svg" />
+                      <img class="image__team" src="images/placeholder.svg" />
+                      <img class="image__team" src="images/placeholder.svg" />
+                      <img class="image__team" src="images/placeholder.svg" />
+                    </div> <!-- team images -->
+                    <div class="component__flex noselect">
+                      <div class="portfolio-item">
+                        <div class="hover-bg"> <a href="images/mornay_large.jpg" title="Team unity"
+                            data-lightbox-gallery="gallery1">
+                            <div class="hover-text">
+                              <h4>Team 5</h4>
+                            </div>
+                            <div class="component__images__design">
+                              <img class="image__design" src="images/mornay_large.jpg" />
+                            </div> <!-- design image -->
+                          </a> </div>
+                      </div>
+                      <div class="component__rationale__text">
+                        <div id="description" class="component__description__text">
+                          <span class="component__description__heading">Rationale</span>
+                          <p class="component__description__body">Sed sed tristique tellus. Pellentesque semper magna
+                            dictum enim congue, vel fermentum eros dictum. Sed quis leo justo. Proin rhoncus varius
+                            tempus. Aliquam et fermentum est. Praesent diam justo, aliquet id ligula et, dignissim
+                            dictum quam. Mauris posuere lorem in arcu auctor, sit amet dignissim mauris dignissim. Nam
+                            tempor nulla lorem, nec pellentesque enim elementum eget. Maecenas placerat consequat erat
+                            sed congue. Nulla vitae posuere arcu. Nulla et lorem feugiat arcu auctor vehicula nec et
+                            metus.
+                          </p>
+                        </div> <!-- text -->
+                        <div class="component__description__toggle noselect" onclick="onToggleDescriptionSize(event)">
+                          <span id="descriptionToggle">Read more</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <button id="lazy-load-button" class="lazy-load__button noselect" onclick="loadMoreVeryLazily()">Load
+                    More</button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <div class="footer">
+    <div class="container">
+
+      <div class="footer_top">
+
+        <div class="row">
+          <div class="col-md-4 footer_grid">
+            <h4>Contact Us</h4>
+
+            <p>Phone:(+27) 82 578 0724</p>
+            <!-- <p>Fax: (000) 000 00 00 0</p> -->
+            <p>Email: <span><a class="maillink" href="mailto:info@20designers.co.za">info@20designers.co.za</a></span>
+            </p>
+
+            <!--
+                        <ul class="socials">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                      </ul>
+                      -->
+
+          </div>
+          <div class="col-md-4 footer_grid">
+            <h4>Physical Address</h4>
+            <div class="company_address">
+
+              <p>Lynnwood</p>
+              <p>Pretoria, 0001</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 footer_grid">
+            <h4>Postal Address</h4>
+            <div class="company_address">
+              <p>PostNetSuite 95</p>
+              <p>Private Bag X37</p>
+              <p>Lynnwood Ridge</p>
+              <p>Pretoria, 0040</p>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <div class="copy_right">
+        </div>
+        <p class="maillink">&copy; 2016 | Rising Lemon Guest House | All rights reserved</p>
+      </div>
+      <div class="footer_nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="designers.html">20 Emblem Designers</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>
