@@ -34,8 +34,7 @@
   justify-content: center;
 }
 .component__images__design {
-  padding: 15px;
-  min-width: 200px;
+  width: 290px;
 }
 .component__images__team {
   display: flex;
@@ -54,9 +53,8 @@
   overflow: hidden;
 }
 .component__rationale__text {
-  padding-left: 15px;
   min-width: 320px;
-  max-width: 500px;
+  max-width: 440px;
 }
 .component__description__heading {
   font-family: 'Open Sans Condensed', sans-serif;
