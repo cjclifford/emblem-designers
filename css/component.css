@@ -55,6 +55,7 @@
 .component__rationale__text {
   min-width: 320px;
   max-width: 440px;
+  padding: 5px;
 }
 .component__description__heading {
   font-family: 'Open Sans Condensed', sans-serif;
