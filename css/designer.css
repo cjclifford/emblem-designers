@@ -1,0 +1,40 @@
+.designer__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+.designer__team {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.designer__team__design {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 100px 0 100px 0
+}
+
+.designer__team__design img {
+  width: 100%;
+}
+
+.designer__team__rationale {
+  margin: 0 50px 0 50px;
+}
+
+.designer__image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.designer__image img {
+  max-width: 260px;
+}
