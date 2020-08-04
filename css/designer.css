@@ -38,3 +38,33 @@
 .designer__image img {
   max-width: 260px;
 }
+
+.designer__details {
+  display: flex;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto auto;
+  row-gap: 40px;
+  column-gap: 40px;
+}
+
+img {
+  width: 100%;
+  min-width: 150px;
+}
+
+@media only screen and (max-width: 425px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 40px;
+  }
+
+  .grid-item {
+    justify-self: center;
+  }
+}

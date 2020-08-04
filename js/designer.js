@@ -40,7 +40,7 @@
   }
 
   document.getElementById('member-name').innerText = selectedTeamMember.fullName;
-  document.getElementById('member-team').innerText = selectedTeam.teamName;
+  document.getElementById('member-team').innerText = selectedTeam.teamName + '\'s Design';
   document.getElementById('member-image').src = selectedTeamMember.memberImage;
   document.getElementById('member-design').src = selectedTeam.designImage;
   document.getElementById('member-design-rationale').innerText = selectedTeam.designRationale;
