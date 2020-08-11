@@ -28,9 +28,14 @@
   margin: 0 50px 0 50px;
 }
 
+.designer__image {
+  max-width: 200px;
+}
+
 .designer__image img {
   width: 100%;
   min-width: 150px;
+  border-radius: 12px;
 }
 
 .designer__details {
