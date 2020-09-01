@@ -6,10 +6,10 @@
       teamMembers: [
         {
           fullName: 'Name Surname',
-          memberImage: './images/placeholder.svg'
+          memberImage: './images/placeholder-profile-picture.png'
         }
       ],
-      designImage: './images/placeholder.svg',
+      designImage: './images/emblem_big.png',
       designRationale: `Sed sed tristique tellus. Pellentesque semper magna
         dictum enim congue, vel fermentum eros dictum. Sed quis leo justo. Proin rhoncus varius
         tempus. Aliquam et fermentum est. Praesent diam justo, aliquet id ligula et, dignissim

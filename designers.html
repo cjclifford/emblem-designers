@@ -18,28 +18,12 @@
   <link href="css/component.css" rel="stylesheet" type="text/css" />
   <link href="css/image.css" rel="stylesheet" type="text/css" />
   <link href="css/lazy-load.css" rel="stylesheet" type="text/css" />
+  <link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+  <script src="js/wow.min.js"></script>
   <script src="js/designers.js" type="text/javascript"></script>
   <script src="js/jquery.min.js" type="text/javascript"></script>
   <script>
-    $(function () {
-      var button = $('#loginButton');
-      var box = $('#loginBox');
-      var form = $('#loginForm');
-      button.removeAttr('href');
-      button.mouseup(function (login) {
-        box.toggle();
-        button.toggleClass('active');
-      });
-      form.mouseup(function () {
-        return false;
-      });
-      $(this).mouseup(function (login) {
-        if (!($(login.target).parent('#loginButton').length > 0)) {
-          button.removeClass('active');
-          box.hide();
-        }
-      });
-    });
+    new WOW().init();
   </script>
   <!----font-Awesome----->
   <link rel="stylesheet" href="fonts/css/font-awesome.min.css">
@@ -81,7 +65,7 @@
   <!-- Ends Header -->
   <!------------ Start Content ---------------->
   <div class="main">
-    <div class="reservation_top">
+    <div class="reservation_top wow fadeInLeft" data-wow-delay="0.4s">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -95,12 +79,12 @@
 
 
               <div id="portfolio">
-                <div class="container">
+                <div>
 
                   <div class="categories">
-                    <ul class="cat" style="padding: 0;">
+                    <ul class="cat">
                       <li>
-                        <ol class="type noselect" style="padding: 0;">
+                        <ol class="type noselect">
                           <li><a class="active" onclick="showTeam()">All</a></li>
                           <li><a class="pointer" onclick="showTeam(0)">Team Africa</a></li>
                           <li><a class="pointer" onclick="showTeam(1)">Team Unity</a></li>
@@ -114,9 +98,9 @@
                   </div>
 
                   <div class="component__team">
-                    <div class="component__description">
+                    <div>
                       <div id="description" class="component__description__text">
-                        <span class="component__description__heading">Team Africa</span>
+                        <b>Team Africa</b>
                         <p class="component__description__body">Sed sed tristique tellus. Pellentesque semper magna
                           dictum enim congue, vel fermentum eros dictum. Sed quis leo justo. Proin rhoncus varius
                           tempus. Aliquam et fermentum est. Praesent diam justo, aliquet id ligula et, dignissim
@@ -133,45 +117,43 @@
                     <div class="component__images__team noselect">
                       <div class="image__team">
                         <a href="./designer.html?member=Name%20Surname&team=team-africa">
-                          <img src="images/placeholder.svg" />
+                          <img src="images/placeholder-profile-picture.png" />
                         </a>
-                        Name Surname
+                        <div class="component__member__name">Name Surname</div class="component__member__name">
                       </div>
                       <div class="image__team">
                         <a href="./designer.html?member=Name%20Surname&team=team-africa">
-                          <img src="images/placeholder.svg" />
+                          <img src="images/placeholder-profile-picture.png" />
                         </a>
-                        Name Surname
+                        <div class="component__member__name">Name Surname</div class="component__member__name">
                       </div>
                       <div class="image__team">
                         <a href="./designer.html?member=Name%20Surname&team=team-africa">
-                          <img src="images/placeholder.svg" />
+                          <img src="images/placeholder-profile-picture.png" />
                         </a>
-                        Name Surname
+                        <div class="component__member__name">Name Surname</div class="component__member__name">
                       </div>
                       <div class="image__team">
                         <a href="./designer.html?member=Name%20Surname&team=team-africa">
-                          <img src="images/placeholder.svg" />
+                          <img src="images/placeholder-profile-picture.png" />
                         </a>
-                        Name Surname
+                        <div class="component__member__name">Name Surname</div class="component__member__name">
                       </div>
                       <div class="image__team">
                         <a href="./designer.html?member=Name%20Surname&team=team-africa">
-                          <img src="images/placeholder.svg" />
+                          <img src="images/placeholder-profile-picture.png" />
                         </a>
-                        Name Surname
+                        <div class="component__member__name">Name Surname</div class="component__member__name">
                       </div>
                     </div> <!-- team images -->
                     <div class="component__flex noselect">
-                      <div class="portfolio-item">
-                        <h3>The Group's design</h3>
-                        <div class="hover-bg">
-                            <img  src="images/placeholder.svg" /> <!-- design image -->
-                        </div>
+                      <h3>The Group's design</h3>
+                      <div class="component__design__image">
+                        <img class="image__design" src="images/emblem_big.png" /> <!-- design image -->
                       </div>
                       <div class="component__rationale__text">
                         <div id="description" class="component__description__text">
-                          <span class="component__description__heading">Rationale</span>
+                          <h3>Rationale</h3>
                           <p class="component__description__body">Sed sed tristique tellus. Pellentesque semper magna
                             dictum enim congue, vel fermentum eros dictum. Sed quis leo justo. Proin rhoncus varius
                             tempus. Aliquam et fermentum est. Praesent diam justo, aliquet id ligula et, dignissim
@@ -189,9 +171,9 @@
                   </div>
 
                   <div class="component__team">
-                    <div class="component__description">
+                    <div>
                       <div id="description" class="component__description__text">
-                        <span class="component__description__heading">Team Unity</span>
+                        <b>Team Unity</b>
                         <p class="component__description__body">Sed sed tristique tellus. Pellentesque semper magna
                           dictum enim congue, vel fermentum eros dictum. Sed quis leo justo. Proin rhoncus varius
                           tempus. Aliquam et fermentum est. Praesent diam justo, aliquet id ligula et, dignissim
@@ -208,31 +190,31 @@
                     <div class="component__images__team noselect">
                       <div class="image__team">
                         <a href="./designer.html?member=Name%20Surname&team=team-africa">
-                          <img src="images/placeholder.svg" />
+                          <img src="images/placeholder-profile-picture.png" />
                         </a>
                         Name Surname
                       </div>
                       <div class="image__team">
                         <a href="./designer.html?member=Name%20Surname&team=team-africa">
-                          <img src="images/placeholder.svg" />
+                          <img src="images/placeholder-profile-picture.png" />
                         </a>
                         Name Surname
                       </div>
                       <div class="image__team">
                         <a href="./designer.html?member=Name%20Surname&team=team-africa">
-                          <img src="images/placeholder.svg" />
+                          <img src="images/placeholder-profile-picture.png" />
                         </a>
                         Name Surname
                       </div>
                       <div class="image__team">
                         <a href="./designer.html?member=Name%20Surname&team=team-africa">
-                          <img src="images/placeholder.svg" />
+                          <img src="images/placeholder-profile-picture.png" />
                         </a>
                         Name Surname
                       </div>
                       <div class="image__team">
                         <a href="./designer.html?member=Name%20Surname&team=team-africa">
-                          <img src="images/placeholder.svg" />
+                          <img src="images/placeholder-profile-picture.png" />
                         </a>
                         Name Surname
                       </div>
@@ -244,12 +226,12 @@
                             <div class="hover-text">
                               <h4>Team Unity</h4>
                             </div>
-                            <img  src="images/placeholder.svg" /> <!-- design image -->
+                            <img class="image__design" src="images/emblem_big.png" /> <!-- design image -->
                           </a> </div>
                       </div>
                       <div class="component__rationale__text">
                         <div id="description" class="component__description__text">
-                          <span class="component__description__heading">Rationale</span>
+                          <h3>Rationale</h3>
                           <p class="component__description__body">Sed sed tristique tellus. Pellentesque semper magna
                             dictum enim congue, vel fermentum eros dictum. Sed quis leo justo. Proin rhoncus varius
                             tempus. Aliquam et fermentum est. Praesent diam justo, aliquet id ligula et, dignissim
@@ -267,9 +249,9 @@
                   </div>
 
                   <div class="component__team">
-                    <div class="component__description">
+                    <div>
                       <div id="description" class="component__description__text">
-                        <span class="component__description__heading">Team 3</span>
+                        <b>Team 3</b>
                         <p class="component__description__body">Sed sed tristique tellus. Pellentesque semper magna
                           dictum enim congue, vel fermentum eros dictum. Sed quis leo justo. Proin rhoncus varius
                           tempus. Aliquam et fermentum est. Praesent diam justo, aliquet id ligula et, dignissim
@@ -286,31 +268,31 @@
                     <div class="component__images__team noselect">
                       <div class="image__team">
                         <a href="./designer.html?member=Name%20Surname&team=team-africa">
-                          <img src="images/placeholder.svg" />
+                          <img src="images/placeholder-profile-picture.png" />
                         </a>
                         Name Surname
                       </div>
                       <div class="image__team">
                         <a href="./designer.html?member=Name%20Surname&team=team-africa">
-                          <img src="images/placeholder.svg" />
+                          <img src="images/placeholder-profile-picture.png" />
                         </a>
                         Name Surname
                       </div>
                       <div class="image__team">
                         <a href="./designer.html?member=Name%20Surname&team=team-africa">
-                          <img src="images/placeholder.svg" />
+                          <img src="images/placeholder-profile-picture.png" />
                         </a>
                         Name Surname
                       </div>
                       <div class="image__team">
                         <a href="./designer.html?member=Name%20Surname&team=team-africa">
-                          <img src="images/placeholder.svg" />
+                          <img src="images/placeholder-profile-picture.png" />
                         </a>
                         Name Surname
                       </div>
                       <div class="image__team">
                         <a href="./designer.html?member=Name%20Surname&team=team-africa">
-                          <img src="images/placeholder.svg" />
+                          <img src="images/placeholder-profile-picture.png" />
                         </a>
                         Name Surname
                       </div>
@@ -322,12 +304,12 @@
                             <div class="hover-text">
                               <h4>Team 3</h4>
                             </div>
-                            <img  src="images/placeholder.svg" /> <!-- design image -->
+                            <img class="image__design" src="images/emblem_big.png" /> <!-- design image -->
                           </a> </div>
                       </div>
                       <div class="component__rationale__text">
                         <div id="description" class="component__description__text">
-                          <span class="component__description__heading">Rationale</span>
+                          <h3>Rationale</h3>
                           <p class="component__description__body">Sed sed tristique tellus. Pellentesque semper magna
                             dictum enim congue, vel fermentum eros dictum. Sed quis leo justo. Proin rhoncus varius
                             tempus. Aliquam et fermentum est. Praesent diam justo, aliquet id ligula et, dignissim
@@ -345,9 +327,9 @@
                   </div>
 
                   <div class="component__team">
-                    <div class="component__description">
+                    <div>
                       <div id="description" class="component__description__text">
-                        <span class="component__description__heading">Team 4</span>
+                        <b>Team 4</b>
                         <p class="component__description__body">Sed sed tristique tellus. Pellentesque semper magna
                           dictum enim congue, vel fermentum eros dictum. Sed quis leo justo. Proin rhoncus varius
                           tempus. Aliquam et fermentum est. Praesent diam justo, aliquet id ligula et, dignissim
@@ -364,31 +346,31 @@
                     <div class="component__images__team noselect">
                       <div class="image__team">
                         <a href="./designer.html?member=Name%20Surname&team=team-africa">
-                          <img src="images/placeholder.svg" />
+                          <img src="images/placeholder-profile-picture.png" />
                         </a>
                         Name Surname
                       </div>
                       <div class="image__team">
                         <a href="./designer.html?member=Name%20Surname&team=team-africa">
-                          <img src="images/placeholder.svg" />
+                          <img src="images/placeholder-profile-picture.png" />
                         </a>
                         Name Surname
                       </div>
                       <div class="image__team">
                         <a href="./designer.html?member=Name%20Surname&team=team-africa">
-                          <img src="images/placeholder.svg" />
+                          <img src="images/placeholder-profile-picture.png" />
                         </a>
                         Name Surname
                       </div>
                       <div class="image__team">
                         <a href="./designer.html?member=Name%20Surname&team=team-africa">
-                          <img src="images/placeholder.svg" />
+                          <img src="images/placeholder-profile-picture.png" />
                         </a>
                         Name Surname
                       </div>
                       <div class="image__team">
                         <a href="./designer.html?member=Name%20Surname&team=team-africa">
-                          <img src="images/placeholder.svg" />
+                          <img src="images/placeholder-profile-picture.png" />
                         </a>
                         Name Surname
                       </div>
@@ -400,12 +382,12 @@
                             <div class="hover-text">
                               <h4>Team 4</h4>
                             </div>
-                            <img  src="images/placeholder.svg" /> <!-- design image -->
+                            <img class="image__design" src="images/emblem_big.png" /> <!-- design image -->
                           </a> </div>
                       </div>
                       <div class="component__rationale__text">
                         <div id="description" class="component__description__text">
-                          <span class="component__description__heading">Rationale</span>
+                          <h3>Rationale</h3>
                           <p class="component__description__body">Sed sed tristique tellus. Pellentesque semper magna
                             dictum enim congue, vel fermentum eros dictum. Sed quis leo justo. Proin rhoncus varius
                             tempus. Aliquam et fermentum est. Praesent diam justo, aliquet id ligula et, dignissim
@@ -423,9 +405,9 @@
                   </div>
 
                   <div class="component__team">
-                    <div class="component__description">
+                    <div>
                       <div id="description" class="component__description__text">
-                        <span class="component__description__heading">Team 5</span>
+                        <b>Team 5</b>
                         <p class="component__description__body">Sed sed tristique tellus. Pellentesque semper magna
                           dictum enim congue, vel fermentum eros dictum. Sed quis leo justo. Proin rhoncus varius
                           tempus. Aliquam et fermentum est. Praesent diam justo, aliquet id ligula et, dignissim
@@ -442,31 +424,31 @@
                     <div class="component__images__team noselect">
                       <div class="image__team">
                         <a href="./designer.html?member=Name%20Surname&team=team-africa">
-                          <img src="images/placeholder.svg" />
+                          <img src="images/placeholder-profile-picture.png" />
                         </a>
                         Name Surname
                       </div>
                       <div class="image__team">
                         <a href="./designer.html?member=Name%20Surname&team=team-africa">
-                          <img src="images/placeholder.svg" />
+                          <img src="images/placeholder-profile-picture.png" />
                         </a>
                         Name Surname
                       </div>
                       <div class="image__team">
                         <a href="./designer.html?member=Name%20Surname&team=team-africa">
-                          <img src="images/placeholder.svg" />
+                          <img src="images/placeholder-profile-picture.png" />
                         </a>
                         Name Surname
                       </div>
                       <div class="image__team">
                         <a href="./designer.html?member=Name%20Surname&team=team-africa">
-                          <img src="images/placeholder.svg" />
+                          <img src="images/placeholder-profile-picture.png" />
                         </a>
                         Name Surname
                       </div>
                       <div class="image__team">
                         <a href="./designer.html?member=Name%20Surname&team=team-africa">
-                          <img src="images/placeholder.svg" />
+                          <img src="images/placeholder-profile-picture.png" />
                         </a>
                         Name Surname
                       </div>
@@ -478,12 +460,12 @@
                             <div class="hover-text">
                               <h4>Team 5</h4>
                             </div>
-                            <img  src="images/placeholder.svg" /> <!-- design image -->
+                            <img class="image__design" src="images/emblem_big.png" /> <!-- design image -->
                           </a> </div>
                       </div>
                       <div class="component__rationale__text">
                         <div id="description" class="component__description__text">
-                          <span class="component__description__heading">Rationale</span>
+                          <h3>Rationale</h3>
                           <p class="component__description__body">Sed sed tristique tellus. Pellentesque semper magna
                             dictum enim congue, vel fermentum eros dictum. Sed quis leo justo. Proin rhoncus varius
                             tempus. Aliquam et fermentum est. Praesent diam justo, aliquet id ligula et, dignissim
@@ -500,8 +482,7 @@
                     </div>
                   </div>
 
-                  <button id="lazy-load-button" class="lazy-load__button noselect" onclick="loadMoreVeryLazily()">Load
-                    More</button>
+                  <button id="lazy-load-button" class="lazy-load__button noselect" onclick="loadMoreVeryLazily()">Load more</button>
 
                 </div>
               </div>
