@@ -103,6 +103,7 @@ ol.type li a.active {
 ol.type li a:hover {
 	background: #58a54b;
 	color: #fff;
+	text-decoration: none;
 }
 .isotope-item {
 	z-index: 2
