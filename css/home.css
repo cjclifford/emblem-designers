@@ -1,0 +1,11 @@
+.emblem-name-container .emblem{
+    margin-top: 6em;
+}
+
+@media only screen and (min-width: 1000px) {
+    .emblem-name-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}

@@ -7,14 +7,14 @@ function onToggleDescriptionSize(event) {
 
   more = description.style && description.style.overflow;
 
-  if (!more || more == "hidden") {
+  if (!more || more == 'hidden') {
     description.style.maxHeight = 'initial';
     description.style.overflow = 'initial';
-    descriptionToggle.textContent = "Read less";
+    descriptionToggle.textContent = 'Read less';
   } else {
     description.style.maxHeight = '22ex';
     description.style.overflow = 'hidden';
-    descriptionToggle.textContent = "Read more";
+    descriptionToggle.textContent = 'Read more';
     setToggleVisible(description, descriptionToggle);
   }
 }
@@ -36,15 +36,29 @@ function onSetToggleAll() {
 
 function showTeam(teamId) {
   lazyLoadButton = document.getElementById('lazy-load-button');
-  if (teamId === null || teamId === undefined) {
-    lazyLoadButton.style.display = "initial";
+  let teamFilterButtons = document.getElementById('team-filters').children;
+  let teamFilterButton;
+
+  for (let button of teamFilterButtons) {
+    button.children[0].classList.remove('active');
+  }
+
+  if (teamId === null) {
+    teamFilterButton = document.getElementById('team-all');
+    teamFilterButton.classList.add('active');
+    lazyLoadButton.style.display = 'initial';
     showAllTeams();
-    return;
   } else {
-    lazyLoadButton.style.display = "none";
-    for (team of this.teams)
-      team.style.display = "none";
-    this.teams[teamId].style.display = "initial";
+    teamFilterButton = document.getElementById(`team-${teamId}`);
+    teamFilterButton.classList.add('active');
+    lazyLoadButton.style.display = 'none';
+    for (team of this.teams) {
+      if (team === this.teams[teamId]) {
+        team.style.display = 'initial';
+      } else {
+        team.style.display = 'none';
+      }
+    }
   }
 }
 
@@ -52,18 +66,19 @@ function initLazyLoad() {
   lazyLoadButton = document.getElementById('lazy-load-button');
   this.lazyLoadIndex = 0;
   for (team of this.teams)
-    team.style.display = "none";
-  this.teams[this.lazyLoadIndex].style.display = "initial";
+    team.style.display = 'none';
+  this.teams[this.lazyLoadIndex].style.display = 'initial';
   checkLazyLoadLimit();
 }
 
 function showAllTeams() {
-  for (team in this.teams) {
-    console.log(team);
-    if (team <= this.lazyLoadIndex)
-      this.teams[team].style.display = "initial";
+  let i = 0;
+  for (team of this.teams) {
+    i++;
+    if (i <= this.lazyLoadIndex)
+      team.style.display = 'initial';
     else
-      this.teams[team].style.display = "none";
+      team.style.display = 'none';
   }
   loadMoreVeryLazily();
 }
@@ -71,7 +86,7 @@ function showAllTeams() {
 function loadMoreVeryLazily() {
   if (this.teams.length - 1 > this.lazyLoadIndex) {
     this.lazyLoadIndex++;
-    this.teams[this.lazyLoadIndex].style.display = "initial";
+    this.teams[this.lazyLoadIndex].style.display = 'initial';
     checkLazyLoadLimit();
   }
 }
@@ -79,7 +94,7 @@ function loadMoreVeryLazily() {
 function checkLazyLoadLimit() {
   lazyLoadButton = document.getElementById('lazy-load-button');
   if (this.teams.length - 1 === this.lazyLoadIndex)
-    lazyLoadButton.style.display = "none";
+    lazyLoadButton.style.display = 'none';
 }
 
 window.onresize = onSetToggleAll;
@@ -87,6 +102,7 @@ window.onresize = onSetToggleAll;
 window.onload = function () {
   window.setTimeout(0);
   this.teams = document.getElementsByClassName('component__team');
+  console.log(this.teams);
   onSetToggleAll();
   initLazyLoad();
 }

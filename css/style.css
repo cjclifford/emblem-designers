@@ -1574,6 +1574,8 @@ ul.comment-list .desc {
 	margin: 1.5em 0;
 	font-size: 0.85em;
 	color: #999;
+	border-radius: 100px;
+	font-family: 'Open Sans Condensed', sans-serif;
 }
 .contact-form textarea {
 	display: block;
