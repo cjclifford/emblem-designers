@@ -2,6 +2,19 @@
     margin-top: 6em;
 }
 
+.group-banner {
+    object-fit: fill;
+	background: url("../images/group.jpg")no-repeat center top;
+	background-size: 100% 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center;
+    /* padding: 2em 0 3em; */
+    height: 12em;
+}
+
 @media only screen and (min-width: 1000px) {
     .emblem-name-container {
         display: flex;
