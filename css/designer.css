@@ -3,6 +3,16 @@
   border-top: 1px solid #e6e6e6;
 }
 
+.designer__container .container .back-link {
+  margin-bottom: 2em;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.designer__container .container .back-link a {
+  color: #8cc63e;
+}
+
 .designer__team {
   width: 100%;
   display: flex;
@@ -33,6 +43,8 @@
   width: 100%;
   min-width: 150px;
   border-radius: 12px;
+  margin-bottom: 2em;
+  border: 1px solid black;
 }
 
 .designer__details {
@@ -42,8 +54,7 @@
 .grid-container {
   display: grid;
   grid-template-areas: 'picture info'
-                       'heading heading'
-                        'design rationale';
+                       'design rationale';
   grid-template-columns: 1fr 2fr;
   grid-template-rows: auto auto auto;
   row-gap: 40px;

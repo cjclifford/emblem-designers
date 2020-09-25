@@ -35,6 +35,7 @@ function onSetToggleAll() {
 }
 
 function showTeam(teamId) {
+  hideHorizontalRules();
   lazyLoadButton = document.getElementById('lazy-load-button');
   let teamFilterButtons = document.getElementById('team-filters').children;
   let teamFilterButton;
@@ -46,7 +47,7 @@ function showTeam(teamId) {
   if (teamId === null) {
     teamFilterButton = document.getElementById('team-all');
     teamFilterButton.classList.add('active');
-    lazyLoadButton.style.display = 'initial';
+    lazyLoadButton.style.display = 'block';
     showAllTeams();
   } else {
     teamFilterButton = document.getElementById(`team-${teamId}`);
@@ -54,7 +55,7 @@ function showTeam(teamId) {
     lazyLoadButton.style.display = 'none';
     for (team of this.teams) {
       if (team === this.teams[teamId]) {
-        team.style.display = 'initial';
+        team.style.display = 'block';
       } else {
         team.style.display = 'none';
       }
@@ -67,26 +68,27 @@ function initLazyLoad() {
   this.lazyLoadIndex = 0;
   for (team of this.teams)
     team.style.display = 'none';
-  this.teams[this.lazyLoadIndex].style.display = 'initial';
+  this.teams[this.lazyLoadIndex].style.display = 'block';
   checkLazyLoadLimit();
 }
 
 function showAllTeams() {
   let i = 0;
   for (team of this.teams) {
-    i++;
     if (i <= this.lazyLoadIndex)
-      team.style.display = 'initial';
+      team.style.display = 'block';
     else
       team.style.display = 'none';
+    i++;
   }
   loadMoreVeryLazily();
+  showHorizontalRules();
 }
 
 function loadMoreVeryLazily() {
   if (this.teams.length - 1 > this.lazyLoadIndex) {
     this.lazyLoadIndex++;
-    this.teams[this.lazyLoadIndex].style.display = 'initial';
+    this.teams[this.lazyLoadIndex].style.display = 'block';
     checkLazyLoadLimit();
   }
 }
@@ -97,12 +99,25 @@ function checkLazyLoadLimit() {
     lazyLoadButton.style.display = 'none';
 }
 
+function showHorizontalRules() {
+  let rules = document.getElementsByClassName("component__team__hrule");
+  for (let rule of rules) {
+    rule.style.display = 'block';
+  }
+}
+
+function hideHorizontalRules() {
+  let rules = document.getElementsByClassName("component__team__hrule");
+  for (let rule of rules) {
+    rule.style.display = 'none';
+  }
+}
+
 window.onresize = onSetToggleAll;
 
 window.onload = function () {
   window.setTimeout(0);
   this.teams = document.getElementsByClassName('component__team');
-  console.log(this.teams);
   onSetToggleAll();
   initLazyLoad();
 }
