@@ -47,6 +47,16 @@
   border: 1px solid black;
 }
 
+.designer__image__design {
+  display: flex;
+  flex-direction: column;
+}
+
+.designer__image__design img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
 .designer__details {
   display: flex;
 }
@@ -55,7 +65,7 @@
   display: grid;
   grid-template-areas: 'picture info'
                        'design rationale';
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto auto;
   row-gap: 40px;
   column-gap: 40px;
@@ -82,7 +92,7 @@
   grid-area: rationale;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 768px) {
   .grid-container {
     grid-template-areas:  'picture info'
                           'heading heading'
