@@ -10,6 +10,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <link href="css/nav.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/lazy-load.css" rel="stylesheet" type="text/css" media="all"/>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300:700' rel='stylesheet' type='text/css'>
 <script src="js/jquery.min.js" type="text/javascript"></script>
@@ -79,7 +80,9 @@
             	<div class="col-md-5">
             		<div class="contact_left">
             			<h3>Address</h3>
-            			<iframe class="map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe><br /><small><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=United+Kingdom&amp;aq=0&amp;oq=un&amp;sll=37.0625,-95.677068&amp;sspn=48.956293,107.138672&amp;ie=UTF8&amp;hq=&amp;hnear=United+Kingdom&amp;ll=55.378051,-3.435973&amp;spn=135.795411,68.554687&amp;t=m&amp;z=2" style="color:#666;font-size:12px;text-align:left"> </a></small>
+            			<!-- <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13500760.72548269!2d18.2539408!3d-34.2973993!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1c34a689d9ee1251%3A0xe85d630c1fa4e8a0!2sSouth%20Africa!5e0!3m2!1sen!2sza!4v1617903160610!5m2!1sen!2sza" width="400" height="300" scrolling="no" marginheight="0" marginwidth="0" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+									<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114584.75250859791!2d27.969984622577957!3d-26.171504554284038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950c68f0406a51%3A0x238ac9d9b1d34041!2sJohannesburg!5e0!3m2!1sen!2sza!4v1617903414705!5m2!1sen!2sza" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+								<br /><small><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=United+Kingdom&amp;aq=0&amp;oq=un&amp;sll=37.0625,-95.677068&amp;sspn=48.956293,107.138672&amp;ie=UTF8&amp;hq=&amp;hnear=United+Kingdom&amp;ll=55.378051,-3.435973&amp;spn=135.795411,68.554687&amp;t=m&amp;z=2" style="color:#666;font-size:12px;text-align:left"> </a></small>
 						<address class="address">
                     <p> South Africa</p>
 
@@ -103,7 +106,7 @@
          <p id="emailErrorlabel" class="hidden" name="emailError" style=" color:#ec4936;">Email entered is incorrect, Enter valid email address</p>
           <textarea placeholder="Message" class="form-control input-lg" required name="message" id="message" style=" color:#403E27;  margin-top: 20px; margin-bottom: 20px;" ></textarea>
           <p id="messageErrorlabel" class="hidden" name="messageError" style=" color:#ec4936;">Message too short, Enter more than 5 characters</p> 
-          <input type="submit" value="Send"/>
+					<button type="submit" class="lazy-load__button noselect">Find out more</button>
           <div class="clearfix"></div>
 							</form>
 						</div>

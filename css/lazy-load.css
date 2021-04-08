@@ -12,10 +12,10 @@
   border-radius: 4px;
   text-transform: unset;
   transition: all 0.3s;
+  background-color: #58a54b;
+  color: #fff;
 }
 .lazy-load__button:hover {
-  background: #58a54b;
-  color: #fff;
 }
 .lazy-load__button:focus {
   outline: 0;

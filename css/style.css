@@ -1244,7 +1244,7 @@ h2.staff_head{
 	color:#555;
 	font-size:0.95em;
 	line-height:1.8em;
-	margin:1em 0;
+	margin: 0;
 }
 .post1 .post1_header {
 	font-size: 13px;
@@ -1576,7 +1576,7 @@ ul.comment-list .desc {
 }
 .contact-form input[type="text"] {
 	display: block;
-	width:70%;
+	/* width:70%; */
 	padding: 10px;
 	border: 1px solid #ddd;
 	outline: none;
@@ -1588,9 +1588,10 @@ ul.comment-list .desc {
 }
 .contact-form textarea {
 	display: block;
-	width: 70%;
+	/* width: 70%; */
 	padding: 10px;
 	border: 1px solid #ddd;
+	border-radius: 10px;
 	outline: none;
 	margin: 1.5em 0;
 	font-size: 0.85em;

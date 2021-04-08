@@ -59,6 +59,7 @@
 }
 .component__description__toggle {
   font-weight: bold;
+  line-height: 40px;
 }
 .component__member__name {
   margin-top: 0.7em;
