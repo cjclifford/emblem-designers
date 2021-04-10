@@ -10,34 +10,26 @@
 .pointer {
   cursor: pointer;
 }
-.component {
-  width: 100%;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.component {
-  display: flex;
-  flex-direction: row;
-}
-.component__flex {
+.designers__flex {
   display: flex;
   flex-direction: row;
   justify-content: start;
 }
-.component__team {
+.designers__team {
   display: block;
   margin-bottom: 3em;
   padding-right: 1em;
   padding-left: 1em;
 }
-.component__team > hr {
+.designers__team > hr {
   margin-bottom: 4em;
   border: 2px solid #e6e6e6;
 }
-.component__images {
+.designers__images {
   display: flex;
   justify-content: center;
 }
-.component__images__team {
+.designers__images__team {
   display: flex;
   align-items: center;
   justify-content: start;
@@ -45,26 +37,26 @@
   padding-top: 2em;
   min-width: 200px;
 }
-.component__description__text {
+.designers__description__text {
   font-size: 1.5rem;
   max-height: 30ex;
   overflow: hidden;
 }
-.component__rationale__text {
+.designers__rationale__text {
   min-width: 320px;
   padding: 5px;
 }
-.component__description__body {
+.designers__description__body {
   font-size: 1rem;
 }
-.component__description__toggle {
+.designers__description__toggle {
   font-weight: bold;
   line-height: 40px;
 }
-.component__member__name {
+.designers__member__name {
   margin-top: 0.7em;
 }
-.component__design__image {
+.designers__design__image {
   display: flex;
   flex-direction: column;
   margin-top: 1em;
@@ -73,16 +65,16 @@
 }
 
 @media only screen and (max-width: 745px) {
-  .component__images {
+  .designers__images {
     flex-direction: column;
   }
-  .component__design__image {
+  .designers__design__image {
     margin-right: 0;
   }
 }
 
 @media only screen and (max-width: 880px) {
-  .component__flex {
+  .designers__flex {
     flex-direction: column;
   }
 }
