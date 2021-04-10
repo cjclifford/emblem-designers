@@ -104,6 +104,10 @@
   width: 100%;
 }
 
+.home__designers__list__section {
+  list-style-image: url("../images/profile.svg");
+}
+
 @media only screen and (max-width: 769px) {
   .home__content {
     grid-template-columns: 1fr;
