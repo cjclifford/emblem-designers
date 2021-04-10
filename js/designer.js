@@ -1,5 +1,4 @@
 (function() {
-  console.log('designer');
   teams = [
     {
       teamName: 'team-africa',
