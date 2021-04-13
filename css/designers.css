@@ -42,6 +42,13 @@
   max-height: 30ex;
   overflow: hidden;
 }
+.designers__heading {
+  /* margin-bottom: 4rem; */
+  text-align: center;
+}
+.designers__heading__description {
+  text-align: center;
+}
 .designers__rationale__text {
   min-width: 320px;
   padding: 5px;
@@ -70,6 +77,10 @@
   }
   .designers__design__image {
     margin-right: 0;
+  }
+
+  .designers__heading {
+    text-align: left;
   }
 }
 

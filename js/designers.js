@@ -1,5 +1,5 @@
 function onToggleDescriptionSize(event) {
-  description = event.target.parentElement.parentElement.getElementsByClassName('index__description__text')[0];
+  description = event.target.parentElement.parentElement.getElementsByClassName('designers__description__text')[0];
   descriptionToggle = event.target;
 
   if (!description || !descriptionToggle)
@@ -27,9 +27,9 @@ function setToggleVisible(description, descriptionToggle) {
 }
 
 function onSetToggleAll() {
-  descriptionToggles = document.getElementsByClassName('index__description__toggle');
+  descriptionToggles = document.getElementsByClassName('designers__description__toggle');
   for (descriptionToggle of descriptionToggles) {
-    description = descriptionToggle.parentElement.parentElement.getElementsByClassName('index__description__text')[0];
+    description = descriptionToggle.parentElement.parentElement.getElementsByClassName('designers__description__text')[0];
     setToggleVisible(description, descriptionToggle);
   }
 }
@@ -100,14 +100,14 @@ function checkLazyLoadLimit() {
 }
 
 function showHorizontalRules() {
-  let rules = document.getElementsByClassName("index__team__hrule");
+  let rules = document.getElementsByClassName("designers__team__hrule");
   for (let rule of rules) {
     rule.style.display = 'block';
   }
 }
 
 function hideHorizontalRules() {
-  let rules = document.getElementsByClassName("index__team__hrule");
+  let rules = document.getElementsByClassName("designers__team__hrule");
   for (let rule of rules) {
     rule.style.display = 'none';
   }
@@ -117,7 +117,7 @@ window.onresize = onSetToggleAll;
 
 window.onload = function () {
   window.setTimeout(0);
-  this.teams = document.getElementsByClassName('index__team');
+  this.teams = document.getElementsByClassName('designers__team');
   onSetToggleAll();
   initLazyLoad();
 }
