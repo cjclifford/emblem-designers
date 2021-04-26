@@ -1,12 +1,11 @@
 .lazy-load__button {
   display: block;
   width: 200px;
-  margin: auto;
+  margin: 2em auto;
   height: 50px;
-  color: #58595B;
+  color: #58595b;
   font-size: 16px;
   font-weight: 600;
-  margin-top: 2em;
   background: #e6e6e6;
   border: 0;
   border-radius: 4px;
