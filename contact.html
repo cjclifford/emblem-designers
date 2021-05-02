@@ -67,13 +67,17 @@
               <div class="contact_left">
                 <h3>Contact us</h3>
                 <div class="contact-form">
-                  <form action="sendmail.php" method="POST">
+                  <form
+                    action="sendmail.php"
+                    method="POST"
+                    class="lazy-load__form"
+                  >
                     <input
                       type="text"
                       placeholder="Name"
                       class="form-control input-lg"
-                      name="email"
-                      id="email"
+                      name="name"
+                      id="name"
                       required
                       style="
                         color: #403e27;
@@ -82,7 +86,7 @@
                       "
                     />
                     <input
-                      type="text"
+                      type="email"
                       placeholder="Email address"
                       class="form-control input-lg"
                       name="email"
@@ -124,7 +128,7 @@
                       Message too short, Enter more than 5 characters
                     </p>
                     <button type="submit" class="lazy-load__button noselect">
-                      Submit
+                      Send
                     </button>
                   </form>
                 </div>
