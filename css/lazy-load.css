@@ -14,8 +14,6 @@
   background-color: #58a54b;
   color: #fff;
 }
-.lazy-load__button:hover {
-}
 .lazy-load__button:focus {
   outline: 0;
 }

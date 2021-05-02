@@ -58,12 +58,13 @@
   grid-area: about-image;
   display: flex;
   justify-content: center;
+  padding: 0 20px;
 }
 
 .home__about__image > img {
   border-radius: 12px;
   width: 100%;
-  margin-right: 20px;
+  margin: 20px;
 }
 
 .home__description__title {
@@ -91,6 +92,7 @@
   grid-area: description-image;
   display: flex;
   justify-content: center;
+  padding: 0 20px;
 }
 
 .home__description__image > img {
@@ -186,11 +188,11 @@
   }
 
   .home__description__image > img {
-    margin: 0 20px;
+    margin: 0;
   }
 
   .home__about__image > img {
-    margin: 0 20px;
+    margin: 0;
   }
 
   .home__designers__list__section__item {
